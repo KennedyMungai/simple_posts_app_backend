@@ -1,6 +1,7 @@
 """The Posts model file"""
+from sqlalchemy import Column, ForeignKey, Integer, String
+
 from database.db import Base
-from sqlalchemy import Column, Integer, String, ForeignKey
 
 
 class Post(Base):
