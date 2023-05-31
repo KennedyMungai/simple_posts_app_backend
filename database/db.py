@@ -22,6 +22,10 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()
 
+# def create_db_and_tables():
+#     """The function that creates the database and tables"""
+#     Base.metadata.create_all(bind=engine)
+
 def get_db():
     """The function that gets the db connection
 
