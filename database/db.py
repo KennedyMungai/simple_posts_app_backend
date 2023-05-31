@@ -7,3 +7,11 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 load_dotenv(find_dotenv())
+
+MYSQL_HOST = os.environ.get('MYSQL_HOST')
+MYSQL_USERNAME = os.environ.get('MYSQL_USERNAME')
+MYSQL_PASSWORD = os.environ.get('MYSQL_PASSWORD')
+MYSQL_PORT = os.environ.get('MYSQL_PORT')
+MYSQL_DATABASE = os.environ.get('MYSQL_DATABASE')
+
+MYSQL_URL = f'mysql+pymysql://{MYSQL_USERNAME}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DATABASE}'
