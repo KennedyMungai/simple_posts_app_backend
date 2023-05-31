@@ -1,5 +1,5 @@
 """The Posts model file"""
-from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy import Column, ForeignKey, Integer, String, Boolean
 
 from database.db import Base
 
