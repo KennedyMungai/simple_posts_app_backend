@@ -22,9 +22,6 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()
 
-Base.metadata.create_all(bind=engine)
-
-
 def get_db():
     """The function that gets the db connection
 
