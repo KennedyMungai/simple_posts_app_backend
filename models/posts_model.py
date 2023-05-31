@@ -5,7 +5,7 @@ from database.db import Base
 
 
 class Post(Base):
-    """The Pist class
+    """The Post class
 
     Args:
         Base (Declarative Base): Something in SQlAlchemy
