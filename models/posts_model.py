@@ -1,7 +1,8 @@
 """The Posts model file"""
-from sqlalchemy import Boolean, Column, Integer, String
+from sqlalchemy import Boolean, Column, Integer, String, DateTime
 
 from database.db import Base
+from datetime import datetime
 
 
 class Post(Base):
@@ -16,3 +17,4 @@ class Post(Base):
     title = Column(String, nullable=False)
     content = Column(String, nullable=False)
     published = Column(Boolean, default=False)
+    created_at = Column(DateTime, default=datetime.now())
