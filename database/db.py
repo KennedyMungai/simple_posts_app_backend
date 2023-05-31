@@ -17,3 +17,5 @@ MYSQL_DATABASE = os.environ.get('MYSQL_DATABASE')
 MYSQL_URL = f'mysql+pymysql://{MYSQL_USERNAME}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DATABASE}'
 
 engine = create_engine(MYSQL_DATABASE)
+
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
