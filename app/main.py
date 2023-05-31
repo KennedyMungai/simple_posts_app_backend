@@ -1,6 +1,6 @@
 """The main file for the application"""
 from fastapi import FastAPI
-
+from database.db import get_db
 
 app = FastAPI(title='Posts App', description='A simple posts app')
 
