@@ -11,7 +11,9 @@
 		"python.formatting.provider": "none",
 		"cSpell.words": [
 			"autoflush",
+			"DBAPI",
 			"dotenv",
+			"poolclass",
 			"pymysql",
 			"sessionmaker"
 		]
