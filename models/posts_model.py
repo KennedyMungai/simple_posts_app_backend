@@ -5,6 +5,11 @@ from database.db import Base
 
 
 class Post(Base):
+    """The Pist class
+
+    Args:
+        Base (Declarative Base): Something in SQlAlchemy
+    """
     __tablename__ = "posts"
     
     id = Column(Integer, primary_key=True, nullable=False)
