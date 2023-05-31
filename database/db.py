@@ -19,3 +19,5 @@ MYSQL_URL = f'mysql+pymysql://{MYSQL_USERNAME}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MY
 engine = create_engine(MYSQL_DATABASE)
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+Base = declarative_base()
